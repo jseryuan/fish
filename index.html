@@ -2,21 +2,83 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>dome</title>
+    <link rel="stylesheet" href="css/base.css">
+
 	<style>
-		*{margin: 0;padding: 0;}
-		html,body{
-			width: 100%;
-			height: 100%;
-		}
 		body{
-			background: #000;
+			background: #20181f;
+		}
+		header{
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 90px;
+			width: 100%;
+			z-index: 5;
+			background: #20181f;
+			line-height: 90px;
+			font-size: 30px;
+			color: #fff;
+		}
+		.logo{
+			float: left;
+			margin-left: 100px;
+			width: 100px;
+			text-align: center;
+		}
+		.title{
+			width: 120px;
+			text-align: center;
+			float: left;
+			height:90px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -60px;
+		}
+		.back{
+			width: 100px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			float: right;
+			margin-right: 100px;
+			margin-top: 20px;
+			-webkit-box-shadow:0 0 18px #fff;
+			-moz-box-shadow:0 0 18px #fff;
+			box-shadow:0 0 18px #fff;
+			cursor: pointer;
+		}
+		.back a{
+			display: block;
+			height: 100%;
+			width: 100%;
+			color: #fff;
+		}
+		.content{
+			position: relative;
+			width: 100%;
 			text-align: center;
 		}
 		#c1{
 			background: url(img/game_bg_2_hd.jpg) no-repeat;
 		}
 	</style>
+	
+</head>
+<body>
+	<header>
+		<div class="logo">JserYuan</div>
+		<div class="title">捕鱼达人</div>
+		<div class="back">
+			<a href="https://jseryuan.github.io">Back</a>
+		</div>
+	</header>
+	<div class="content">
+		<canvas width="800" height="600" id="c1"></canvas>
+	</div>
+</body>
 	<script src="js/com.js"></script>
 	<script src="js/resource.js"></script> 
 	<script src="js/fish.js"></script>
@@ -29,12 +91,4 @@
 	<script src="js/shark.js"></script>
 	<script src="js/delshark.js"></script>
 	<script src="js/init.js"></script>
-	<script>
-		
-
-	</script>
-</head>
-<body>
-	<canvas width="800" height="600" id="c1"></canvas>
-</body>
 </html>

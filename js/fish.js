@@ -13,7 +13,7 @@ function Fish(type){
 	this.rotate=130;
 	this.move();
 	this.cur=0;
-	this.iSpeed=1;
+	this.iSpeed=2;
 	this.collR=FISH_SIZE[this.type].collR;
 
 } 
